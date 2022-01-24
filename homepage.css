@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'NimbusSanExtd';
+    src: url(fonts/NimbusSanL-Bol.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NimbusSanRegular';
+    src: url(fonts/Nimbus-Sans-D-OT-Regular-Extended.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NimbusSanExtdBlack';
+    src: url(fonts/Nimbus-Sans-D-OT-Black-Extended_32740.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NimbusSanRegularThin';
+    src: url(fonts/NimbusSanL-Bol.otf);
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'NimbusSanRegular', sans-serif;
+    padding-top: 24px;
+    background-color: #E5E5E5;
+}
+
+body {
+    background-color: #E5E5E5;
+    background-image: url('photos/bg\ desktop\ vers.svg');
+}
+
+.logo {
+    font-family: 'NimbusSanExtdBlack';
+    font-size: 40px;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    list-style: none;
+}
+
+.navlinks :hover {
+    color: #FF3D47;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: hand;
+}
+
+.intro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+h1 {
+    margin-top: 10%;
+    font-family: 'NimbusSanExtd';
+    font-size: 45px;
+    line-height: 50px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-family: 'NimbusSanRegular';
+    font-weight: lighter;
+    color: #404040;
+}
