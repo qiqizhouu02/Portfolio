@@ -37,14 +37,14 @@ nav {
     background-color: #E5E5E5;
 }
 
-body {
-    background-color: #E5E5E5;
-    background-image: url('photos/bg\ desktop\ vers.svg');
-}
-
 .logo {
     font-family: 'NimbusSanExtdBlack';
     font-size: 40px;
+}
+
+body {
+    background-color: #E5E5E5;
+    background-image: url('photos/bg\ desktop\ vers.svg');
 }
 
 .navlinks {
@@ -65,9 +65,16 @@ a {
 }
 
 .intro {
+    margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    max-width: 70%;
+    margin-bottom: 10%;
+    display: block;
+}
+
+.hidden {
+    display: none;
 }
 
 h1 {
@@ -82,4 +89,100 @@ h2 {
     font-family: 'NimbusSanRegular';
     font-weight: lighter;
     color: #404040;
+}
+
+
+/* Image Column */
+
+.container {
+    grid-template-columns: 1fr;
+    max-width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.figure:hover .overlay {
+    opacity: 1;
+}
+
+.figure {
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.pics {
+    display: block;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.container .imageText {
+    position: absolute;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center
+}
+
+
+/* heading formatting is all good   */
+
+h3 {
+    font-family: 'NimbusSanExtd';
+    font-size: 35px;
+}
+
+h4 {
+    font-family: 'NimbusSanRegular';
+    font-size: 20px;
+}
+
+
+/* Social Media Footer */
+
+.social-icons {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.logos {
+    padding: 10px;
+    max-width: 35px;
+    max-height: 35px;
+}
+
+.yt {
+    max-width: 33px;
+}
+
+.logos:hover {
+    transform: scale(1.3);
+    transition-duration: 0.2s;
 }
