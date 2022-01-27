@@ -1,174 +1,176 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: 'NimbusSanExtd';
-    src: url(fonts/NimbusSanL-Bol.otf);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NimbusSanRegular';
-    src: url(fonts/Nimbus-Sans-D-OT-Regular-Extended.ttf);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NimbusSanExtdBlack';
-    src: url(fonts/Nimbus-Sans-D-OT-Black-Extended_32740.ttf);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NimbusSanRegularThin';
-    src: url(fonts/NimbusSanL-Bol.otf);
-    font-style: normal;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    font-family: 'NimbusSanRegular', sans-serif;
-    padding-top: 24px;
-    background-color: #E5E5E5;
-}
-
-.logo {
-    font-family: 'NimbusSanExtdBlack';
-    font-size: 40px;
-}
-
-body {
-    background-color: #E5E5E5;
-    background-image: url('photos/bg\ desktop\ vers.svg');
-}
-
-.navlinks {
-    display: flex;
-    justify-content: space-around;
-    width: 35%;
-    list-style: none;
-}
-
-.navlinks :hover {
-    color: #FF3D47;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    cursor: hand;
-}
-
-.intro {
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-    margin-bottom: 10%;
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-h1 {
-    margin-top: 10%;
-    font-family: 'NimbusSanExtd';
-    font-size: 45px;
-    line-height: 50px;
-}
-
-h2 {
-    margin-top: 10px;
-    font-family: 'NimbusSanRegular';
-    font-weight: lighter;
-    color: #404040;
-}
-
-
-/* masonry gallery (hope this works lmao */
-
-
-/* :root {
-    counter-reset: masonry;
-} */
-
-.masonry {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 0;
-    max-width: 70%;
-}
-
-.masonry-item {
-    border-radius: 5px;
-}
-
-.masonry-item {
-    background-color: #eee;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.masonry-item,
-.masonry-item img {
-    position: relative;
-}
-
-.masonry-item:after {
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, .5);
-    content: counter(masonry);
-    counter-increment: masonry;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .1s ease-in;
-}
-
-.masonry-item:hover:after {
-    font-size: 30px;
-    background-color: rgba(0, 0, 0, .75);
-}
-
-
-/* Social Media Footer */
-
-.social-icons {
-    display: block;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 10px;
-}
-
-.logos {
-    padding: 10px;
-    max-width: 35px;
-    max-height: 35px;
-}
-
-.yt {
-    max-width: 33px;
-}
-
-.logos:hover {
-    transform: scale(1.3);
-    transition-duration: 0.2s;
-}
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        @font-face {
+            font-family: 'NimbusSanExtd';
+            src: url(fonts/NimbusSanL-Bol.otf);
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'NimbusSanRegular';
+            src: url(fonts/Nimbus-Sans-D-OT-Regular-Extended.ttf);
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'NimbusSanExtdBlack';
+            src: url(fonts/Nimbus-Sans-D-OT-Black-Extended_32740.ttf);
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'NimbusSanRegularThin';
+            src: url(fonts/NimbusSanL-Bol.otf);
+            font-style: normal;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 8vh;
+            font-family: 'NimbusSanRegular', sans-serif;
+            padding-top: 24px;
+            background-color: #E5E5E5;
+        }
+        
+        .logo {
+            font-family: 'NimbusSanExtdBlack';
+            font-size: 40px;
+        }
+        
+        body {
+            background-color: #E5E5E5;
+            background-image: url('photos/bg\ desktop\ vers.svg');
+        }
+        
+        .navlinks {
+            display: flex;
+            justify-content: space-around;
+            width: 35%;
+            list-style: none;
+        }
+        
+        .navlinks :hover {
+            color: #FF3D47;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+            cursor: hand;
+        }
+        
+        .intro {
+            margin-top: 3%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70%;
+            margin-bottom: 10%;
+            display: block;
+            text-align: center;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        h1 {
+            margin-top: 10%;
+            font-family: 'NimbusSanExtd', sans-serif;
+            font-weight: 100;
+            font-size: 45px;
+            line-height: 50px;
+        }
+        
+        h2 {
+            margin-top: 10px;
+            font-family: 'NimbusSanRegular';
+            font-weight: lighter;
+            color: #404040;
+        }
+        /* header-text */
+        
+        .header-text {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 50%;
+        }
+        /* masonry gallery (hope this works lmao */
+        
+        img {
+            width: 100%;
+        }
+        
+        .container {
+            margin-right: auto;
+            margin-left: auto;
+            /* text-align: center; */
+            width: 70%;
+        }
+        
+        .masonry {
+            display: block;
+            column-count: 3;
+            column-gap: 16px;
+        }
+        
+        .masonry .masonry-item {
+            display: inline-block;
+            margin-bottom: 16px;
+            width: 100%;
+            /* text-align: center; */
+        }
+        
+        @media (max-width: 1199px) {
+            .masonry {
+                column-count: 3;
+            }
+        }
+        
+        @media (max-width: 991px) {
+            .masonry {
+                column-count: 2;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .masonry {
+                column-count: 1;
+            }
+        }
+        /* Social Media Footer */
+        
+        .footer {
+            display: block;
+        }
+        
+        .social-icons {
+            display: block;
+            flex-direction: row;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+        
+        .logos {
+            padding: 10px;
+            max-width: 35px;
+            max-height: 35px;
+        }
+        
+        .yt {
+            max-width: 33px;
+        }
+        
+        .logos:hover {
+            transform: scale(1.3);
+            transition-duration: 0.2s;
+        }

@@ -1,4 +1,4 @@
 $(document).ready(function() {
-    $('div').fadeIn(2000).removeClass('hidden');
+    $('div').fadeIn(1500).removeClass('hidden');
     console.log('help');
 });
