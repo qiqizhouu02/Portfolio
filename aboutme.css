@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'NimbusSanExtd';
+    src: url(fonts/NimbusSanL-Bol.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NimbusSanRegular';
+    src: url(fonts/Nimbus-Sans-D-OT-Regular-Extended.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NimbusSanExtdBlack';
+    src: url(fonts/Nimbus-Sans-D-OT-Black-Extended_32740.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NimbusSanRegularThin';
+    src: url(fonts/NimbusSanL-Bol.otf);
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'NimbusSanRegular', sans-serif;
+    padding-top: 24px;
+    background-color: #E5E5E5;
+}
+
+.logo {
+    font-family: 'NimbusSanExtdBlack';
+    font-size: 40px;
+}
+
+body {
+    background-color: #E5E5E5;
+    background-image: url('photos/bg\ desktop\ vers.svg');
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    list-style: none;
+}
+
+.navlinks :hover {
+    color: #FF3D47;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: hand;
+}
+
+
+/* container for two contnet */
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    max-width: 70%;
+}
+
+.box-content {
+    flex: 10%;
+    padding: 10px;
+}
+
+.aboutMeimg {
+    max-height: 600px;
+    display: flex;
+}
+
+.myText {
+    padding-top: 30px;
+    font-family: "NimbusSanRegular", sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+h1 {
+    font-family: "NimbusSanExtdBlack", sans-serif;
+    font-size: 30px;
+}
