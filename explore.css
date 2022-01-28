@@ -129,7 +129,7 @@
         transform: translateY(25px);
     }
     
-    .masonry-item.inview2 {
+    .masonry-item.viewscroll {
         opacity: 1;
         -webkit-transform: none;
         transform: none;

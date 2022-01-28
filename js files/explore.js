@@ -8,9 +8,9 @@ const items = document.querySelectorAll('.masonry-item');
 const active = function(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('inview2');
+            entry.target.classList.add('viewscroll');
         } else {
-            entry.target.classList.remove('inview2');
+            entry.target.classList.remove('viewscroll');
         }
     });
 }
