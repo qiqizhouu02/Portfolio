@@ -109,16 +109,17 @@ h2 {
     position: relative;
     max-width: 100%;
     margin-bottom: 15%;
-    scroll-behavior: auto;
+    scroll-snap-align: center;
 }
 
+
+/* 
 #fig1,
-#fig2 {
+#fig2,
+#fig3 {
     height: 100%;
-    /* of the window */
     width: 100%;
-    /* of the window */
-}
+} */
 
 .pics {
     display: block;

@@ -69,11 +69,9 @@ a {
 
 .container {
     position: relative;
-    display: block;
     width: 100%;
     max-height: 400px;
-    color: black;
-    text-align: center;
+    background-color: black;
 }
 
 .header-image {
@@ -81,9 +79,62 @@ a {
     width: 100%;
     max-height: 400px;
     filter: brightness(70%);
-    overflow: hidden;
 }
 
-.headText {
-    position: absolute
+.header-text {
+    display: block;
+    color: black;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'NimbusSanExtdBlack';
+    font-size: 30px;
+}
+
+p {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'NimbusSanRegular';
+    font-size: 20px;
+}
+
+.text-block {
+    display: block;
+    position: relative;
+}
+
+.leftText {
+    position: absolute;
+    top: 50%;
+    float: left;
+    padding-left: 10%;
+}
+
+h2 {
+    font-family: 'NimbusSanExtd';
+    font-size: 20px;
+}
+
+p1 {
+    padding-top: 20px;
+    font-family: 'NimbusSanRegular';
+    font-size: 16px;
+}
+
+.essentialInfo {
+    display: flex;
+    float: right;
+    font-size: 16px;
+    padding-right: 10%;
+}
+
+li {
+    font-family: 'NimbusSanRegular';
+    float: right;
+    direction: rtl;
 }
