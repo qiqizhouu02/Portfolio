@@ -27,6 +27,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Telophone';
+    src: url(fonts/telopone.ttf);
+    font-style: normal;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 nav {
     display: flex;
     justify-content: space-around;
@@ -78,7 +85,7 @@ a {
     object-fit: cover;
     width: 100%;
     max-height: 400px;
-    filter: brightness(70%);
+    /* filter: brightness(70%); */
 }
 
 .header-text {
@@ -87,7 +94,7 @@ a {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -103,38 +110,80 @@ p {
     font-size: 20px;
 }
 
-.text-block {
-    display: block;
-    position: relative;
-}
+
+/* left text  */
 
 .leftText {
-    position: absolute;
-    top: 50%;
-    float: left;
-    padding-left: 10%;
+    text-align: left;
+    margin-left: 20%;
+    padding-top: 100px;
 }
 
 h2 {
     font-family: 'NimbusSanExtd';
-    font-size: 20px;
+    font-size: 30px;
 }
 
 p1 {
     padding-top: 20px;
     font-family: 'NimbusSanRegular';
-    font-size: 16px;
+    font-size: 20px;
+}
+
+
+/* right text */
+
+.rightText {
+    padding-top: 200px;
+    text-align: right;
+    margin-right: 20%;
 }
 
 .essentialInfo {
-    display: flex;
-    float: right;
-    font-size: 16px;
-    padding-right: 10%;
+    font-size: 20px;
+    font-family: 'NimbusSanRegular';
+    direction: rtl;
 }
 
-li {
+
+/* style guide  */
+
+.centerText {
+    margin-top: 150px;
+    display: block;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+h3 {
+    font-family: 'NimbusSanExtd';
+    font-size: 25px;
+    text-align: center;
+}
+
+.styleGuide {
+    display: flex;
+    flex: 10%;
+}
+
+.styleText {
+    padding-top: 50px;
+    list-style: none;
+    line-height: 35px;
+}
+
+.liHead {
+    font-family: 'Telophone';
+    font-size: 30px;
+}
+
+.liSubHead {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.bodyText {
+    font-size: 20px;
     font-family: 'NimbusSanRegular';
-    float: right;
-    direction: rtl;
 }

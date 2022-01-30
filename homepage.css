@@ -95,7 +95,8 @@ h2 {
 /* Image Column */
 
 .container {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    /* scroll-snap-type: y mandatory; */
     max-width: 70%;
     display: block;
     margin: auto;
@@ -106,15 +107,28 @@ h2 {
 }
 
 .figure {
+    scroll-snap-align: center;
     position: relative;
     max-width: 100%;
     margin-bottom: 15%;
-    scroll-snap-align: center;
+    -webkit-transition: all 0.9s;
+    transition: all 0.9s;
+    opacity: .7;
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
+    /* scroll-snap-align: start; */
+}
+
+.figure.viewscroll {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
 }
 
 
-/* 
-#fig1,
+/* #fig1,
 #fig2,
 #fig3 {
     height: 100%;
@@ -148,6 +162,7 @@ h2 {
     position: absolute;
     color: white;
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -159,8 +174,8 @@ h2 {
 /* heading formatting is all good   */
 
 h3 {
-    font-family: 'NimbusSanExtd';
-    font-size: 35px;
+    font-family: 'NimbusSanExtdBlack';
+    font-size: 30px;
 }
 
 h4 {
