@@ -110,20 +110,21 @@
     /* left text  */
     
     .leftText {
-        text-align: left;
+        text-align: justify;
         margin-left: 20%;
         padding-top: 100px;
+        width: 50%;
     }
     
     h2 {
         font-family: 'NimbusSanExtd';
-        font-size: 30px;
+        font-size: 25px;
     }
     
     p1 {
         padding-top: 20px;
         font-family: 'NimbusSanRegular';
-        font-size: 20px;
+        font-size: 16px;
     }
     /* right text */
     
@@ -134,7 +135,7 @@
     }
     
     .essentialInfo {
-        font-size: 20px;
+        font-size: 16px;
         font-family: 'NimbusSanRegular';
         direction: rtl;
     }
@@ -143,8 +144,11 @@
     .centerText {
         margin-top: 150px;
         display: block;
-        margin-right: 15%;
-        margin-left: 15%;
+        /* margin-right: 15%;
+        margin-left: 15%; */
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
     }
     
     h3 {
@@ -207,13 +211,14 @@
     
     p2 {
         font-family: 'NimbusSanRegular';
-        font-size: 20px;
+        font-size: 16px;
     }
     
     .finalproduct {
         width: 80%;
         margin-right: auto;
         margin-left: auto;
+        padding-bottom: 100px;
     }
     
     .centered-image {
