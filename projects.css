@@ -1,189 +1,226 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-@font-face {
-    font-family: 'NimbusSanExtd';
-    src: url(fonts/NimbusSanL-Bol.otf);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NimbusSanRegular';
-    src: url(fonts/Nimbus-Sans-D-OT-Regular-Extended.ttf);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NimbusSanExtdBlack';
-    src: url(fonts/Nimbus-Sans-D-OT-Black-Extended_32740.ttf);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NimbusSanRegularThin';
-    src: url(fonts/NimbusSanL-Bol.otf);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Telophone';
-    src: url(fonts/telopone.ttf);
-    font-style: normal;
-}
-
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    font-family: 'NimbusSanRegular', sans-serif;
-    padding-top: 24px;
-    background-color: #E5E5E5;
-}
-
-.logo {
-    font-family: 'NimbusSanExtdBlack';
-    font-size: 40px;
-}
-
-body {
-    background-color: #E5E5E5;
-    background-image: url('photos/bg\ desktop\ vers.svg');
-}
-
-.navlinks {
-    display: flex;
-    justify-content: space-around;
-    width: 35%;
-    list-style: none;
-}
-
-.navlinks :hover {
-    color: #FF3D47;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    cursor: hand;
-}
-
-
-/* header image */
-
-.container {
-    position: relative;
-    width: 100%;
-    max-height: 400px;
-    background-color: black;
-}
-
-.header-image {
-    object-fit: cover;
-    width: 100%;
-    max-height: 400px;
-    /* filter: brightness(70%); */
-}
-
-.header-text {
-    display: block;
-    color: black;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'NimbusSanExtdBlack';
-    font-size: 30px;
-}
-
-p {
-    padding-top: 10px;
-    text-align: center;
-    font-family: 'NimbusSanRegular';
-    font-size: 20px;
-}
-
-
-/* left text  */
-
-.leftText {
-    text-align: left;
-    margin-left: 20%;
-    padding-top: 100px;
-}
-
-h2 {
-    font-family: 'NimbusSanExtd';
-    font-size: 30px;
-}
-
-p1 {
-    padding-top: 20px;
-    font-family: 'NimbusSanRegular';
-    font-size: 20px;
-}
-
-
-/* right text */
-
-.rightText {
-    padding-top: 200px;
-    text-align: right;
-    margin-right: 20%;
-}
-
-.essentialInfo {
-    font-size: 20px;
-    font-family: 'NimbusSanRegular';
-    direction: rtl;
-}
-
-
-/* style guide  */
-
-.centerText {
-    margin-top: 150px;
-    display: block;
-    margin-right: 15%;
-    margin-left: 15%;
-}
-
-h3 {
-    font-family: 'NimbusSanExtd';
-    font-size: 25px;
-    text-align: center;
-}
-
-.styleGuide {
-    display: flex;
-    flex: 10%;
-}
-
-.styleText {
-    padding-top: 50px;
-    list-style: none;
-    line-height: 35px;
-}
-
-.liHead {
-    font-family: 'Telophone';
-    font-size: 30px;
-}
-
-.liSubHead {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.bodyText {
-    font-size: 20px;
-    font-family: 'NimbusSanRegular';
-}
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    @font-face {
+        font-family: 'NimbusSanExtd';
+        src: url(fonts/NimbusSanL-Bol.otf);
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'NimbusSanRegular';
+        src: url(fonts/Nimbus-Sans-D-OT-Regular-Extended.ttf);
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'NimbusSanExtdBlack';
+        src: url(fonts/Nimbus-Sans-D-OT-Black-Extended_32740.ttf);
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'NimbusSanRegularThin';
+        src: url(fonts/NimbusSanL-Bol.otf);
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Telophone';
+        src: url(fonts/telopone.ttf);
+        font-style: normal;
+    }
+    
+    @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        font-family: 'NimbusSanRegular', sans-serif;
+        padding-top: 24px;
+        background-color: #E5E5E5;
+    }
+    
+    .logo {
+        font-family: 'NimbusSanExtdBlack';
+        font-size: 40px;
+    }
+    
+    body {
+        background-color: #E5E5E5;
+        background-image: url('photos/bg\ desktop\ vers.svg');
+    }
+    
+    .navlinks {
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+        list-style: none;
+    }
+    
+    .navlinks :hover {
+        color: #FF3D47;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        cursor: hand;
+    }
+    /* header image */
+    
+    .container {
+        position: relative;
+        width: 100%;
+        max-height: 400px;
+        background-color: black;
+    }
+    
+    .header-image {
+        object-fit: cover;
+        width: 100%;
+        max-height: 400px;
+        /* filter: brightness(70%); */
+    }
+    
+    .header-text {
+        display: block;
+        color: black;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+    
+    h1 {
+        text-align: center;
+        font-family: 'NimbusSanExtdBlack';
+        font-size: 30px;
+    }
+    
+    p {
+        padding-top: 10px;
+        text-align: center;
+        font-family: 'NimbusSanRegular';
+        font-size: 20px;
+    }
+    /* left text  */
+    
+    .leftText {
+        text-align: left;
+        margin-left: 20%;
+        padding-top: 100px;
+    }
+    
+    h2 {
+        font-family: 'NimbusSanExtd';
+        font-size: 30px;
+    }
+    
+    p1 {
+        padding-top: 20px;
+        font-family: 'NimbusSanRegular';
+        font-size: 20px;
+    }
+    /* right text */
+    
+    .rightText {
+        padding-top: 200px;
+        text-align: right;
+        margin-right: 20%;
+    }
+    
+    .essentialInfo {
+        font-size: 20px;
+        font-family: 'NimbusSanRegular';
+        direction: rtl;
+    }
+    /* style guide  */
+    
+    .centerText {
+        margin-top: 150px;
+        display: block;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+    
+    h3 {
+        font-family: 'NimbusSanExtd';
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    
+    .styleGuide {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .styleText {
+        padding-top: 50px;
+        list-style: none;
+        line-height: 35px;
+    }
+    
+    .liHead {
+        font-family: 'Telophone';
+        font-size: 30px;
+    }
+    
+    .liSubHead {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    
+    .liBody {
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+    }
+    
+    .bodyText {
+        font-size: 20px;
+        font-family: 'NimbusSanRegular';
+    }
+    
+    .ticketTemplate {
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+    
+    .ticketTemplate img {
+        max-height: 500px;
+        max-width: 100%;
+    }
+    
+    #prog {
+        max-width: 50%;
+    }
+    
+    .description {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    p2 {
+        font-family: 'NimbusSanRegular';
+        font-size: 20px;
+    }
+    
+    .finalproduct {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .centered-image {
+        max-width: 100%;
+        padding-top: 50px;
+    }
+    
+    .final {
+        max-width: 100%;
+    }
