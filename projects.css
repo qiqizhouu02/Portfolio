@@ -4,14 +4,14 @@
     }
     
     @font-face {
-        font-family: 'NimbusSanExtd';
-        src: url(fonts/NimbusSanL-Bol.otf);
+        font-family: 'NimbusSanRegular';
+        src: url(fonts/Nimbus-Sans-D-OT-Regular-Extended.ttf);
         font-style: normal;
     }
     
     @font-face {
-        font-family: 'NimbusSanRegular';
-        src: url(fonts/Nimbus-Sans-D-OT-Regular-Extended.ttf);
+        font-family: 'NimbusSanExtd';
+        src: url(fonts/NimbusSanExt-Bol.otf);
         font-style: normal;
     }
     
