@@ -500,6 +500,17 @@ figcaption {
 }
 
 
+/* conclusion area */
+
+.conclusion-text {
+    line-height: 30px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+
 /* Social Media Footer */
 
 .social-icons {
